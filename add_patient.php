@@ -4,7 +4,7 @@ $port = '3306';
 $service_name = 'sql11679096';
 $username = 'sql11679096';
 $password = 'YdfLiJdJpb';
-
+header_remove("Permissions-Policy");
 $conn = new mysqli($host, $username, $password, $database, $port);
 
 if ($conn->connect_error) {
