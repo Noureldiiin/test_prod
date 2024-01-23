@@ -13,6 +13,8 @@ function addPatient() {
             getPatients();
         }
     };
+    console.log(name)
+    console.log(condition)
     xhr.send("name=" + name + "&condition=" + condition);
 }
 
